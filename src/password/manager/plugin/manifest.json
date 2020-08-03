@@ -1,0 +1,20 @@
+{
+  "name": "Password Manager Plugin",
+  "version": "1.0",
+  "description": "A simple user open-source and customizable password manager for Chrome",
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "scripts/installation.js",
+      "scripts/passwordManagerPlugin.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "html/example.html"
+  },
+  "manifest_version": 2
+}
